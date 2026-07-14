@@ -1,10 +1,374 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Samsidro Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsidro - Professional Trading Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <h1>Welcome to Samsidro.site</h1>
-  <p>My trading website is coming soon.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><i class="fas fa-chart-line"></i> Samsidro</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="btn-primary">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to Samsidro Trading</h2>
+                <p>Professional trading platform designed for success. Trade with confidence, powered by cutting-edge technology.</p>
+                <button class="btn-hero"><i class="fas fa-rocket"></i> Start Trading Now</button>
+            </div>
+            <div class="hero-image">
+                <div class="chart-animation">
+                    <svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid meet">
+                        <polyline points="10,100 40,70 70,80 100,40 130,60 160,30 190,50" fill="none" stroke="url(#gradient)" stroke-width="3" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Why Choose Samsidro?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon green"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure & Trusted</h3>
+                    <p>Bank-level security with encrypted transactions and 24/7 monitoring to protect your investments.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon blue"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Lightning Fast</h3>
+                    <p>Execute trades in milliseconds with our high-speed servers and optimized infrastructure.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon gold"><i class="fas fa-users"></i></div>
+                    <h3>Expert Support</h3>
+                    <p>24/7 customer support with dedicated account managers to help you succeed.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon purple"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Educational</h3>
+                    <p>Learn from industry experts with webinars, tutorials, and trading signals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Trading Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon green">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Forex Trading</h3>
+                    <p>Trade major and minor currency pairs with spreads as low as 0.1 pips.</p>
+                    <ul class="service-list">
+                        <li>✓ 50+ Currency Pairs</li>
+                        <li>✓ Leverage up to 1:500</li>
+                        <li>✓ Instant Execution</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon blue">
+                        <i class="fas fa-bitcoin"></i>
+                    </div>
+                    <h3>Crypto Trading</h3>
+                    <p>Access Bitcoin, Ethereum, and 100+ altcoins with competitive rates.</p>
+                    <ul class="service-list">
+                        <li>✓ 100+ Cryptocurrencies</li>
+                        <li>✓ 24/7 Trading</li>
+                        <li>✓ Cold Wallet Storage</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon gold">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Stocks & ETFs</h3>
+                    <p>Trade stocks from global exchanges with zero commission on ETFs.</p>
+                    <ul class="service-list">
+                        <li>✓ 10,000+ Instruments</li>
+                        <li>✓ Zero Commission</li>
+                        <li>✓ Real-time Data</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon purple">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Commodities</h3>
+                    <p>Trade gold, silver, oil, and other commodities with optimal leverage.</p>
+                    <ul class="service-list">
+                        <li>✓ Precious Metals</li>
+                        <li>✓ Energy Markets</li>
+                        <li>✓ Agricultural</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Powerful Trading Tools</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3>Advanced Charts</h3>
+                    <p>TradingView integration with 100+ technical indicators and real-time price feeds.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3>Mobile Trading</h3>
+                    <p>Trade on the go with our native iOS and Android apps. Full functionality in your pocket.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3>Trading Signals</h3>
+                    <p>AI-powered signals generated by our expert analysts and algorithmic trading systems.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3>Copy Trading</h3>
+                    <p>Follow and copy trades from successful traders with just one click.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">05</div>
+                    <h3>Risk Management</h3>
+                    <p>Stop loss, take profit, and advanced order types to protect your capital.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">06</div>
+                    <h3>Low Commissions</h3>
+                    <p>Competitive spreads and commissions with transparent pricing structure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Traders Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Samsidro has transformed my trading. The platform is intuitive, fast, and the support team is incredible. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <strong>John Martinez</strong>
+                        <span>Professional Trader</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best trading platform I've used. The spreads are competitive, execution is lightning fast, and the tools are top-notch."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Thompson</strong>
+                        <span>Day Trader</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Started with Samsidro 6 months ago and never looked back. The education resources helped me improve my strategy significantly."</p>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Forex Trader</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the minimum deposit?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The minimum deposit is $100 USD. We accept various payment methods including credit cards, bank transfers, and cryptocurrency.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my money safe?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, your funds are held in segregated accounts with tier-1 banks. We comply with all international regulations and maintain 24/7 security monitoring.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I withdraw my profits anytime?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can withdraw your profits anytime. Withdrawals are processed within 24-48 hours depending on your payment method.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What trading hours do you offer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer 24/5 trading for forex and crypto, and market hours for stocks and commodities. See our trading calendar for detailed hours.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide trading signals?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide daily trading signals generated by our team of expert analysts and AI algorithms. They're available to all registered users.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I contact support?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our support team is available 24/7 via live chat, email, and phone. Average response time is under 2 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Start Trading Today</h2>
+            <p>Join thousands of successful traders. Sign up now and get a welcome bonus!</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message (Optional)"></textarea>
+                </div>
+                <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Samsidro</h3>
+                    <p>Your trusted partner in financial trading. We provide professional trading services with competitive rates and excellent support.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Forex Trading</a></li>
+                        <li><a href="#services">Crypto Trading</a></li>
+                        <li><a href="#services">Stocks & ETFs</a></li>
+                        <li><a href="#services">Commodities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Samsidro Trading. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
